@@ -5,7 +5,7 @@
 #         self.next = None
 
 class Solution:
-    def detectCycle(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def detectCycle(self, head):
         if not head or not head.next or not head.next.next:
             return None
         fast, slow = head.next.next, head.next
